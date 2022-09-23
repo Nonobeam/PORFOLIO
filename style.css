@@ -1,0 +1,218 @@
+body,html{
+    height: 2000px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.background{
+    background-image: linear-gradient(120deg, #65ead0 0%, #ab57cf 50%, #8556e3 75%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.hi{
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
+    top: 5%;
+    left: 10%;
+    font-family:Angkor;
+    font-size: 40px;
+    color: whitesmoke;
+    position: relative;
+}
+.job{
+    font-size: 60px; 
+    padding: 30px 15px 15px 0px;
+    position: absolute;
+}
+
+.Im::after{
+    content: " Phuc,";
+    color: blue;
+    font-size: 45px;
+}
+
+.container_ava{
+    top: 5%;
+    right: 5%;
+    position: absolute;
+}
+
+/* .border{
+    border-radius: 37% 63% 66% 34% / 30% 30% 70% 70% ;
+    height: 370px;
+    width: 370px;
+    background-color: #5c1cdc;
+    position: absolute;
+    z-index: 2;
+} */
+
+.ava{
+    border-radius: 37% 63% 66% 34% / 30% 30% 70% 70% ;
+    height: 350px;
+    box-shadow: 15px 22px 0 10px #5c1cdc;
+    position: relative;
+}
+
+.button1{
+    left: 50%;
+    top: 510px;
+    font-size: 40px;
+    color: lightblue;
+    width: fit-content;
+    animation: bounce 1s infinite;
+    position: relative;
+}
+
+@keyframes  bounce{
+    100%{
+        top: 500px;
+    }
+}
+
+.summary{
+    display: flex;
+    align-items: left;
+    margin: 15px;
+    top: 570px;
+    flex-direction: row;
+    position: relative;
+}
+
+.summary_tittle{
+    font-family:Angkor;
+    font-size: 27px;
+    color: whitesmoke;
+    margin: 15px;
+    margin-right: 230px;
+    text-shadow: 2px 5px 2px black;
+    position: relative;
+}
+
+.summary_content{
+    display: flex;
+    margin: 10px;
+    position: relative;
+}
+
+.summary_content>* {
+    flex: 1 1 50px;
+}
+
+.exp{
+    display: flex;
+    align-items: left;
+    margin: 15px;
+    top: 750px;
+    flex-direction: row;
+    position: relative;
+}
+.exp_tittle{
+    font-family:Angkor;
+    font-size: 27px;
+    color: whitesmoke;
+    margin: 10px;
+    text-shadow: 2px 5px 2px black;
+    position: relative;
+}
+.exp_detail{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    position: relative;
+}
+
+.tittle{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 10px;
+    position: relative;
+}
+
+.tittle>* {
+    flex: 1 1 50px;
+}
+
+.tittle_detail{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    position: relative;
+}
+
+.tittle_detail>* {
+    flex: 1 1 50px;
+}
+
+.contact_infor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 1300px;
+    position: relative;
+}
+
+.welcome_to_contact{
+    font-family:Angkor;
+    font-size: 27px;
+    color: whitesmoke;
+    text-shadow: 2px 5px 2px black;
+    position: relative;
+}
+
+.social_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #1c22dc;
+    font-size: 25px;
+    position: relative;
+}
+
+.career_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #1c22dc;
+    font-size: 25px;
+    position: relative;
+}
+
+.button2{
+    left: 50%;
+    top: 450px;
+    font-size: 40px;
+    width: fit-content;
+    color: lightblue;
+    animation: bounce2 1.0s infinite;
+    position: relative;
+}
+
+@keyframes bounce2{
+    100%{
+        top: 440px;
+    }
+}
+
+.personal_infor{
+    text-align: center;
+    color: black;
+    font-style: italic;
+    font-size: 15px;
+    top: 1450px;
+    position: relative;
+}
+
+.phone_mail{
+    text-align: center;
+    color: black;
+    font-style: italic;
+    font-size: 15px;
+    top: 1500px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
