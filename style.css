@@ -11,7 +11,23 @@ body,html{
     position: relative;
 }
 
+body::-webkit-scrollbar{
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+    background-image:linear-gradient(120deg, #65ead0 0%, #ab57cf 50%, #8556e3 75%);
+    border-radius: 5px;
+}
+body::-webkit-scrollbar-track{
+    background-color: whitesmoke;
+}
+
+table{
+    border-spacing: 25px;
+}
+
 .hi{
+    position: relative;
     display: flex;
     flex-direction: column;
     max-width: 650px;
@@ -20,12 +36,15 @@ body,html{
     font-family:Angkor;
     font-size: 40px;
     color: whitesmoke;
-    position: relative;
+    opacity: 0;
+    transform: translateY(7%);
+    animation: popup 0.5s linear forwards;
 }
 .job{
+    position: absolute;
     font-size: 60px; 
     padding: 30px 15px 15px 0px;
-    position: absolute;
+
 }
 
 .Im::after{
@@ -35,124 +54,83 @@ body,html{
 }
 
 .container_ava{
+    position: absolute;
     top: 5%;
     right: 5%;
-    position: absolute;
+    opacity: 0;
+    transform: translateY(7%);
+    animation: popup 0.5s linear forwards;
 }
-
-/* .border{
-    border-radius: 37% 63% 66% 34% / 30% 30% 70% 70% ;
-    height: 370px;
-    width: 370px;
-    background-color: #5c1cdc;
-    position: absolute;
-    z-index: 2;
-} */
 
 .ava{
     border-radius: 37% 63% 66% 34% / 30% 30% 70% 70% ;
     height: 350px;
-    box-shadow: 15px 22px 0 10px #5c1cdc;
-    position: relative;
+    box-shadow: 13px 15px 0 10px #5c1cdc;
 }
 
-.button1{
-    left: 50%;
-    top: 510px;
-    font-size: 40px;
-    color: lightblue;
+.information{
+    position: relative;
+    top: 25%;
+    transform: translateY(7%);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.information.active{
+    position: relative;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.individual_infor{
+    position: relative;
+    top: 10%;
+    left: 10%;
+    height: fit-content;
     width: fit-content;
-    animation: bounce 1s infinite;
-    position: relative;
-}
-
-@keyframes  bounce{
-    100%{
-        top: 500px;
-    }
-}
-
-.summary{
     display: flex;
     align-items: left;
-    margin: 15px;
-    top: 570px;
-    flex-direction: row;
-    position: relative;
-}
-
-.summary_tittle{
+    flex-flow: row wrap;
+    margin: 0;
     font-family:Angkor;
-    font-size: 27px;
+    font-size: 15px;
     color: whitesmoke;
-    margin: 15px;
-    margin-right: 230px;
-    text-shadow: 2px 5px 2px black;
-    position: relative;
+    opacity: 0;
+    transform: translateY(7%);
+    animation: popup 0.5s linear forwards;
 }
 
-.summary_content{
-    display: flex;
-    margin: 10px;
-    position: relative;
+.individual_infor_tittle{
+    flex-flow:column nowrap;
 }
 
-.summary_content>* {
-    flex: 1 1 50px;
-}
-
-.exp{
-    display: flex;
-    align-items: left;
-    margin: 15px;
-    top: 750px;
-    flex-direction: row;
-    position: relative;
-}
-.exp_tittle{
-    font-family:Angkor;
-    font-size: 27px;
-    color: whitesmoke;
-    margin: 10px;
-    text-shadow: 2px 5px 2px black;
-    position: relative;
-}
-.exp_detail{
-    display: flex;
-    flex-direction: row;
-    margin: 10px;
-    position: relative;
+.individual_infor_detail{
+    flex-flow:column nowrap;
+    margin-left: 10px;
 }
 
 .tittle{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    margin: 10px;
-    position: relative;
-}
-
-.tittle>* {
-    flex: 1 1 50px;
-}
-
-.tittle_detail{
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    position: relative;
-}
-
-.tittle_detail>* {
-    flex: 1 1 50px;
+    font-family:Angkor;
+    font-size: 27px;
+    color: whitesmoke;
+    text-shadow: 2px 5px 2px black;
 }
 
 .contact_infor{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     top: 1300px;
+    transform: translateY(7%);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.contact_infor.active{
     position: relative;
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .welcome_to_contact{
@@ -181,22 +159,6 @@ body,html{
     position: relative;
 }
 
-.button2{
-    left: 50%;
-    top: 450px;
-    font-size: 40px;
-    width: fit-content;
-    color: lightblue;
-    animation: bounce2 1.0s infinite;
-    position: relative;
-}
-
-@keyframes bounce2{
-    100%{
-        top: 440px;
-    }
-}
-
 .personal_infor{
     text-align: center;
     color: black;
@@ -216,3 +178,114 @@ body,html{
     position: relative;
 }
 
+@keyframes popup {
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+
+
+/* ---------------------RESPONSIVE----------------------- */
+/* tablet only */
+@media only screen and (min-width: 46.25em) and (mad-width:63.9375em){
+    
+}
+
+/* pc only */
+@media only screen and (min-width: 922px){
+    .button1{
+        left: 50%;
+        top: 510px;
+        font-size: 40px;
+        color: lightblue;
+        width: fit-content;
+        animation: bounce 1s infinite;
+        position: relative;
+    }
+    
+    @keyframes  bounce{
+        100%{
+            top: 500px;
+        }
+    }
+
+    .button2{
+        left: 50%;
+        top: 450px;
+        font-size: 40px;
+        width: fit-content;
+        color: lightblue;
+        animation: bounce2 1.0s infinite;
+        position: relative;
+    }
+    
+    @keyframes bounce2{
+        100%{
+            top: 440px;
+        }
+    }
+
+}
+
+/* mobile only*/
+@media only screen and (max-width: 46.1875em){
+
+    .container_ava{
+        top: -110px;
+        left: 50px;
+        position: relative;
+    }
+
+    .ava{
+        height: 250px;
+    }
+
+    .hi{
+        top: 300px;
+        margin: 0;
+    }
+
+    .job{
+        font-size: 33px; 
+        left: -23px;
+        top: 10%;
+        position: absolute;
+    }
+
+    .Im{
+        font-size: 30px;
+        left: -20px;
+        position: relative;
+    }
+
+    .Im::after{
+        font-size: 40px;
+    }
+
+    .button1{
+        visibility: hidden;
+        display: none;
+    }
+
+    .button2{
+        visibility: hidden;
+        display: none;
+    }
+
+    .summary{
+        top: 10%;
+        display: flex;
+        align-items: center;
+        margin: 0px;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .summary_tittle{
+        margin: 15px;
+        margin-right: 7px;
+        font-size: 24px;
+    }
+
+}
