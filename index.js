@@ -50,3 +50,42 @@ $(window).scroll(function(){
     })
 })
 
+$(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+    $(".individual_infor").css({
+    // "-webkit-filter": "blur(" + (scroll/100) + "px)",
+    filter: "blur(" + (scroll/40) + "px)"
+    })
+})
+
+window.addEventListener('scroll', information);
+function information(){
+    var infor = document.querySelectorAll('.information');
+    for (var i = 0; i < infor.length; i++){
+        var windowheight = window.innerHeight;
+        var infortop = infor[i] .getBoundingClientRect().top;
+        var inforpoint = 420;
+        
+        if (infortop < windowheight - inforpoint){
+            infor[i].classList.add('active');
+        }else{
+            infor[i].classList.remove('active');
+        }
+    }
+}
+
+window.addEventListener('scroll', contact_infor);
+function contact_infor(){
+    var contact_infors = document.querySelectorAll('.contact_infor');
+    for (var i = 0; i < contact_infors.length; i++){
+        var windowheight = window.innerHeight;
+        var contact_infor_top = contact_infors[i] .getBoundingClientRect().top;
+        var contact_infor_point = 430;
+        
+        if (contact_infor_top < windowheight - contact_infor_point){
+            contact_infors[i].classList.add('active');
+        }else{
+            contact_infors[i].classList.remove('active');
+        }
+    }
+}
