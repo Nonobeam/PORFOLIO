@@ -3,19 +3,18 @@
 <html lang="eng"; lang="vi">
 
     <head>
-        <title>Phuc's porfolio</title>
+        <title>PORFOLIO</title>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='https://fonts.googleapis.com/css?family=Angkor' rel='stylesheet'>
         <script src="https://kit.fontawesome.com/05ec024090.js" crossorigin="anonymous"></script>
-        <title>PORFOLIO</title>
         <link rel="stylesheet" href="style.css">
         <script defer src="index.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
     </head>
 
     <body class="background">
-
+        <div class="co_bg"></div>
         <!-- First welcome -->
         <div class = "hi">
             <p class = "Im"> Hi, I'm </p>
@@ -28,37 +27,83 @@
             <!-- <div class = "border"></div> -->
         </div>
 
-        <!-- Button  to go to my detail-->
-        <div class="button1" onclick="scroll1()">
-            <i class="fa-solid fa-arrow-down"></i>
-        </div>
-
-        <!-- Short summary about myself -->
-        <div class = "summary"> 
-            <div class = "summary_tittle"> Summary about myself</div>
-            <div class = "summary_content"> Personable IT consultant with 4+ years of experience in a global technology firm.  
-                Seeking to leverage solid technical skills and abilities to advance my career as the next IT consultant.</div>
-        </div>
-
-        <!-- My exp till now -->
-        <div class = "exp">
-            <div class = "exp_tittle">My experience (9/2018 to 9/2022): </div>
-            <div class = "exp_detail">
-                <div class = "tittle">
-                    <div><strong>COMPUTER LANGUAGE:</strong></div>
-                    <div><strong>INTERNATIONAL TECH:</strong></div>
-                    <div><strong>SKILL HIGHLIGHTS:</strong> </div>
-                    <div><strong>LANGUAGE:</strong> </div>
-
-                </div>
-                <div class = "tittle_detail">
-                    <div>HTML, CSS, Javascript, Python, C/C++ (mostly learn from FPT University, Leetcode)</div>
-                    <div>AWS, Docker, Gitlabs, Github (learn from Udemy, Amazon website)</div>
-                    <div>Team management, Strong decision maker, Project management(Using Agile) (learn from FPT University</div>
-                    <div>English(B2), Japanese(Basic) (got B2 IELTS certification)</div>
-                </div>
+        <!-- individual infor-->
+        <div class = "individual_infor">
+            <div class="individual_infor_tittle">
+                <p>Full name:</p>
+                <p>Date of birth:</p>
+                <p>Email:</p>
+            </div>
+            <div class="individual_infor_detail">
+                <p>Nguyen Huu Phuc</p>
+                <p>04-05-2004</p>
+                <p>nguyenhuuthuc0405@gmail.com</p>    
             </div>
         </div>
+
+        <!-- SOME SHIT THAT I WANT TO TRY
+        <div class="man_walking_down">
+            
+        </div> -->
+
+        <table class="information">
+            <tr>
+                <td class="tittle">
+                    Summary:
+                </td>
+                <td>
+                    <table>
+                        <td>
+                            <strong>ABOUT MYSELF:</strong>
+                        </td>
+                        <td>
+                            Personable IT consultant with 4+ years of experience in a global technology firm. Seeking to leverage solid technical skills and abilities to advance my career as the next IT consultant.
+                        </td>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="tittle">
+                    My experience (9/2018 to 9/2022):
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td>
+                                <strong>COMPUTER LANGUAGE:</strong>
+                            </td>
+                            <td>
+                                HTML, CSS, Javascript, Python, C/C++ (mostly learn from FPT University, Leetcode)                          
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>INTERNATIONAL TECH:</strong>
+                            </td>
+                            <td>
+                                AWS, Docker, Gitlabs, Github (learn from Udemy, Amazon website)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>SKILL HIGHLIGHTS:</strong>
+                            </td>
+                            <td>
+                                Team management, Strong decision maker, Project management(Using Agile) (learn from FPT University)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>LANGUAGE:</strong>
+                            </td>
+                            <td>
+                                English(B2), Japanese(Basic) (got B2 IELTS certification)
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
 
         <!-- How to contact me -->
         <div class="contact_infor" style="color:#65e1ea ">
