@@ -1,3 +1,5 @@
+let width = screen.width
+
 function facebook(){
     location.assign("https://www.facebook.com/profile.php?id=100074324105571");
 }
@@ -18,7 +20,7 @@ function scroll1(){
 }
 function scroll2(){
     window.scrollTo({
-        top: 1850,
+        top: 1950,
         behavior: "smooth"
     })
 }
@@ -80,7 +82,7 @@ function contact_infor(){
     for (var i = 0; i < contact_infors.length; i++){
         var windowheight = window.innerHeight;
         var contact_infor_top = contact_infors[i] .getBoundingClientRect().top;
-        var contact_infor_point = 430;
+        var contact_infor_point = 330;
         
         if (contact_infor_top < windowheight - contact_infor_point){
             contact_infors[i].classList.add('active');
@@ -89,3 +91,19 @@ function contact_infor(){
         }
     }
 }
+
+// window.addEventListener('scroll', individual_infor);
+// function individual_infor(){
+//     var individual_infors = document.querySelectorAll('.individual_infor');
+//     for (var i = 0; i < individual_infors.length; i++){
+//         var windowheight = window.innerHeight;
+//         var individual_infor_top = individual_infors[i] .getBoundingClientRect().top;
+//         var individual_infor_point = 20;
+        
+//         if (individual_infor_top < windowheight - individual_infor_point){
+//             individual_infors[i].classList.add('active');
+//         }else{
+//             individual_infors[i].classList.remove('active');
+//         }
+//     }
+// }
