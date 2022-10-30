@@ -206,42 +206,6 @@ td{
     
 }
 
-/* pc only */
-@media only screen and (min-width: 922px){
-    .button1{
-        left: 50%;
-        top: 510px;
-        font-size: 40px;
-        color: lightblue;
-        width: fit-content;
-        animation: bounce 1s infinite;
-        position: relative;
-    }
-    
-    @keyframes  bounce{
-        100%{
-            top: 500px;
-        }
-    }
-
-    .button2{
-        left: 50%;
-        top: 450px;
-        font-size: 40px;
-        width: fit-content;
-        color: lightblue;
-        animation: bounce2 1.0s infinite;
-        position: relative;
-    }
-    
-    @keyframes bounce2{
-        100%{
-            top: 440px;
-        }
-    }
-
-}
-
 /* mobile only*/
 @media only screen and (max-width: 46.1875em){
 
